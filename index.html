@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- BEGIN Info -->
+    <meta
+      name="description"
+      content="Ekko - An open-source framework that provides realtime infrastructure and in-transit message processing for web applications."
+    />
+    <meta name="title" property="og:title" content="Ekko" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="images/thumb.png" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Ekko - An open-source framework that provides realtime infrastructure and in-transit message processing for web applications."
+    />
+    <meta name="author" content="Ekko" />
+    <!-- END Info -->
+    <script defer data-domain="ekko-realtime.com" src="https://plausible.io/js/plausible.js"></script>
+    <!-- BEGIN favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-config"
+      content="images/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- END favicon -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekko</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+    />
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/responsive.css" />
+  </head>
+  <body>
+    <header class="mobile-menu-closed">
+      <div id="header">
+        <a href="/">
+          <img src="images/logo/logo-name.svg" />
+        </a>
+        <nav>
+          <a href="#start-here" class="selected">Start Here</a>
+          <a href="#case-study">Case Study</a>
+          <a href="#presentation">Presentation</a>
+          <a href="#our-team">Our Team</a>
+          <!-- <a
+            href="http://ekko-demo.s3.us-east-2.amazonaws.com/chat-demo/index.html"
+            target="_blank"
+            >Demo</a
+          > -->
+          <a
+            href="https://carnelian-storm-690.notion.site/Using-Ekko-80ae32174bb24c05b16ec4915715deab"
+            target="_blank"
+            >Docs</a
+          >
+          <a
+            href="https://github.com/ekko-realtime"
+            target="_blank"
+            class="icon"
+            ><i class="fab fa-github"></i
+          ></a>
+        </nav>
+        <div id="menu">
+          <button type="button">
+            <svg
+              id="mobile-open"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="mobile-close"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="header-buffer"></div>
+
+      <div id="mobile-menu">
+        <a href="#start-here" class="selected">Start Here</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#presentation">Presentation</a>
+        <a href="#our-team">Our Team</a>
+        <!-- <a
+            href="http://ekko-demo.s3.us-east-2.amazonaws.com/chat-demo/index.html"
+            target="_blank"
+            >Demo</a
+          > -->
+          <a
+            href="https://carnelian-storm-690.notion.site/Using-Ekko-80ae32174bb24c05b16ec4915715deab"
+            target="_blank"
+            >Docs</a
+          >
+        <a href="https://github.com/ekko-realtime" target="_blank"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+    </header>
+
+    <div id="start-here" class="main-section">
+      <div class="h-full">
+        <div class="static-logo-color"></div>
+        <div class="bg-blue">
+          <img
+            class="ekko sm-screen"
+            src="images/logo/logo-name-vertical.png"
+          />
+          <img class="ekko lg-screen" src="images/logo/ekko-name-white.png" />
+
+          <p class="light-text">
+            An open-source framework that<br />provides
+            <span class="text-pink">realtime infrastructure</span> and<br />
+            <span class="text-teal">in-transit message processing</span><br />
+            for web applications.
+          </p>
+        </div>
+      </div>
+      <div class="h-full">
+        <div class="bg-teal static-logo-teal-light">
+          <h2>Easy to Manage & Deploy</h2>
+        </div>
+        <div class="bg-teal">
+          <h2 class="sm-header">Easy to Manage & Deploy</h2>
+          <p>
+            Ekko abstracts away the complexity of working with cloud
+            infrastructure by automating the deployment process.
+          </p>
+          <video autoplay loop muted playsinline>
+            <source src="images/ekko-deploy-teal.mp4" type="video/mp4" />
+            Your browser does not support the HTML5 Video element.
+          </video>
+        </div>
+      </div>
+      <div class="h-full">
+        <div class="bg-pink static-logo-pink-light">
+          <h2>Modular and Flexible</h2>
+        </div>
+        <div class="bg-pink">
+          <h2 class="sm-header">Modular and Flexible</h2>
+          <p>
+            Ekko Functions are serverless functions that can be customized for
+            your realtime needs and reused across applications.
+          </p>
+
+          <video autoplay loop muted playsinline class="pad">
+            <source
+              src="images/diagrams/infrastructure-3.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <aside id="toc">
+      <ul>
+        <!-- Section 1 -->
+        <li data-section="section-1" class="selected">
+          <a href="#section-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Ekko 101</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 2 -->
+        <li data-section="section-2">
+          <a href="#section-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Realtime Web Applications</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Realtime Applications are Everywhere</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-2" class="subitem">
+          <a href="#section-2-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Perceived as Instantaneous</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 3 -->
+        <li data-section="section-3">
+          <a href="#section-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>How is Realtime Implemented</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Data Transfer Patterns: Pulling Data</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Data Transfer Patterns: Pushing Data</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Messaging Pattern: 1:1 Pub/Sub</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-4">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Messaging Pattern: 1:M Pub/Sub</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-5">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Messaging Pattern: M:M Pub/Sub</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-6">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Messaging Pattern: Pub/Sub Hub</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-7">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Messaging Pattern: Bi-directional Pub/Sub</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-3" class="subitem">
+          <a href="#section-3-8">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>WebSockets</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 4 -->
+        <li data-section="section-4">
+          <a href="#section-4">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Dedicated Infrastructure for Realtime</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-4" class="subitem">
+          <a href="#section-4-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Existing Solutions</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 5 -->
+        <li data-section="section-5">
+          <a href="#section-5">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Realtime Middleware</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Realtime Middleware is Everywhere</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>The Realtime Middleware Antipattern</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-5" class="subitem">
+          <a href="#section-5-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Existing Solutions</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 6 -->
+        <li data-section="section-6">
+          <a href="#section-6">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Why We Built Ekko</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 7 -->
+        <li data-section="section-7">
+          <a href="#section-7">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Using Ekko</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Deploying Ekko</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Ekko Infrastructure</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Connecting an Application to Ekko Server</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-4">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Deploying Ekko Functions</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-7" class="subitem">
+          <a href="#section-7-5">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Transforming Messages in Realtime</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 8 -->
+        <li data-section="section-8">
+          <a href="#section-8">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Engineering Challenges</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-8" class="subitem">
+          <a href="#section-8-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Authenticating Clients</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-8" class="subitem">
+          <a href="#section-8-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Ekko Function Management</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-8" class="subitem">
+          <a href="#section-8-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Scaling Ekko</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 9 -->
+        <li data-section="section-9">
+          <a href="#section-9">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Load Testing Ekko</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 10 -->
+        <li data-section="section-10">
+          <a href="#section-10">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Future Work</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-10" class="subitem">
+          <a href="#section-10-1">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Message Persistence</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-10" class="subitem">
+          <a href="#section-10-2">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Message Encryption</p>
+            </div>
+          </a>
+        </li>
+        <li data-section="section-10" class="subitem">
+          <a href="#section-10-3">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>In-order Delivery of Messages</p>
+            </div>
+          </a>
+        </li>
+        <!-- Section 11 -->
+        <li data-section="section-11">
+          <a href="#section-11">
+            <div>
+              <div class="bullet"><div></div></div>
+              <p>Conclusion</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div id="case-study" class="main-section">
+      <div id="case-study-content">
+        <div class="prose">
+          <h1>Case Study</h1>
+          <!-- Section 1 -->
+          <h2 id="section-1">1. Ekko 101</h2>
+          <p>
+            Ekko is an open-source framework that allows developers to easily
+            deploy realtime infrastructure for their applications. Custom
+            serverless functions provide a flexible, modular way to process
+            messages as they pass through the realtime system. It is easy to use
+            our command-line tool to spin up Ekko’s infrastructure, as is
+            deploying serverless functions to process any messages that pass
+            through the realtime system.
+          </p>
+          <p>
+            In this case study, we describe the engineering problem that Ekko
+            solves, that of realtime in-transit message processing. We
+            demonstrate how Ekko works and explain some of the key technical
+            challenges we encountered. Before we get into those details, we want
+            to explain the problem that we sought to address.
+          </p>
+
+          <!-- Section 2 -->
+          <h2 id="section-2">2. Realtime Web Applications</h2>
+          <h3 id="section-2-1">2.1 Realtime Applications are Everywhere</h3>
+          <p>
+            Realtime web applications, or realtime components within bigger
+            monolithic applications, are everywhere.
+          </p>
+          <img
+            class="lazy"
+            data-src="images/diagrams/realtime-is-everywhere.png"
+          />
+          <p>
+            Any live data dashboards, such as stock prices ticking up and down
+            on a website, are examples of realtime web applications. The same
+            applies if you open the Uber app and you see your driver’s car
+            location moving around on the screen, or to simple chat applications
+            where you’re talking back and forth and you see messages as soon as
+            they’re sent to you.
+          </p>
+          <p>
+            These are all very common examples of realtime applications that we
+            see and use every day. In short, users want to automatically get
+            information updates (like messages or geo-locations) without
+            requesting those updates. We see more dynamic and responsive
+            applications being created with the use of these realtime
+            technologies, and alongside that we see application users
+            increasingly expecting realtime data.
+          </p>
+          <h3 id="section-2-2">2.2 Perceived as Instantaneous</h3>
+          <p>
+            In the context of web applications, realtime relates to what the
+            user perceives as happening ‘in real time’.
+          </p>
+          <p>
+            How fast do interactions need to be in order to be perceived as
+            realtime? "Anything under 100 milliseconds," and "anything within a
+            few hundred milliseconds," are the most common statements you'll
+            find when looking into realtime within the context of web
+            applications. (Both of these statements stem from
+            <a
+              href="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6938f6eb-d1de-4d66-8e89-f4e8b80b5222/Miller1968.pdf"
+              target="_blank"
+              >Robert Miller’s 1968 paper</a
+            >, "Response time in man-computer conversational transactions”.)
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/what-is-realtime.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            As one of the leading service providers in the realtime space,
+            PubNub,
+            <a
+              href="https://www.pubnub.com/blog/comprehensive-guide-realtime-tech-stack/"
+              target="_blank"
+              >has stated</a
+            >:
+          </p>
+          <blockquote>
+            “In almost all cases, a realtime interaction has a human angle,
+            because one of the collaborators in any realtime data exchange is
+            always a human. Even in a machine to machine interaction, there is a
+            human sitting at the back, receiving feedback. Hence the human
+            perception of a realtime event is very important.”
+          </blockquote>
+          <p>
+            The meaning of realtime is different in industries such as
+            healthcare and aerospace -- so-called ‘hard’ realtime -- where it is
+            specifically used to refer to systems that human lives can depend
+            on. This is not the type of realtime that we are addressing.
+            Instead, we are focusing on realtime web applications which are
+            specifically concerned with the user’s perception of
+            “instantaneous.”
+          </p>
+          <p>
+            Next, let's consider some of the most common communication patterns
+            for realtime web applications.
+          </p>
+
+          <!-- Section 3 -->
+          <h2 id="section-3">3. How is Realtime Implemented</h2>
+          <p>
+            There are many ways to implement realtime in an application. In this
+            section, we will explore a common way to achieve realtime
+            functionality for an app with many publishers and many subscribers.
+          </p>
+
+          <h3 id="section-3-1">3.1 Data Transfer Patterns: Pulling Data</h3>
+          <p>
+            At the bedrock of web communication we have traditional HTTP request
+            response cycles, and along with it the idea of pulling data.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/data-pull.mp4" type="video/mp4" />
+          </video>
+          <p>
+            When you pull data, you have data that lives in a database
+            somewhere. This data isn’t retrieved until a client explicitly makes
+            a request for the data, at which point the server responds.
+          </p>
+          <p>
+            As we mentioned before, realtime applications automatically update
+            users, without the user requesting the update. So, realtime apps
+            tend not to use a data pull pattern.
+          </p>
+
+          <h3 id="section-3-2">3.2 Data Transfer Patterns: Pushing Data</h3>
+          <p>The pull pattern is distinct from the push pattern.</p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/data-push.mp4" type="video/mp4" />
+          </video>
+          <p>
+            In the data push pattern, the client often starts with an initial
+            request but it keeps that connection open. Now whenever new data is
+            generated, it is immediately sent, or “pushed”, to the client over
+            the open connection.
+          </p>
+          <p>
+            This is the data transfer pattern that realtime applications use:
+            users receive updates automatically, without requesting them.
+          </p>
+          <p>
+            The Pub/Sub model is commonly used to describe the broad set of
+            behaviors associated with this data push pattern.
+          </p>
+
+          <h3 id="section-3-3">3.3 Messaging Pattern: 1:1 Pub/Sub</h3>
+          <p>
+            Within the Pub/Sub pattern, you will see that we no longer model
+            things in terms of servers and clients. We now have ‘publishers’ and
+            ‘subscribers’, and the pattern is focused specifically on their
+            actual roles in the interaction.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/pubsub-1.mp4" type="video/mp4" />
+          </video>
+          <p>
+            We represent them both as browsers on iPads, but the actual hardware
+            doesn’t really matter. Anything that was traditionally a server or a
+            client can act as a publisher or a subscriber.
+          </p>
+          <p>
+            Within the Pub/Sub model we no longer talk about data being stored
+            or data being sent. Instead we think about data in terms of messages
+            being sent from publishers to subscribers. Those messages, in turn,
+            are sent or published to ‘channels’; in some contexts these are
+            referred to as ‘topics’, ‘queues’, or ‘rooms’.
+          </p>
+          <p>
+            Above is an example of a one-to-one Pub/Sub pattern. We have a
+            single publisher generating messages and sending them to a single
+            subscriber. If we take this example one step further, we can see
+            that the Pub/Sub model can also be used for one to many messaging.
+          </p>
+          <h3 id="section-3-4">3.4 Messaging Pattern: 1:M Pub/Sub</h3>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/pubsub-2.mp4" type="video/mp4" />
+          </video>
+          <p>
+            With this new pattern, we still have a single publisher on the left,
+            but now we have three subscribers on the right. Whenever the
+            publisher generates new messages, it sends them over to the
+            subscribers.
+          </p>
+          <p>
+            We can take this pattern even further, with a many-to-many Pub/Sub
+            messaging pattern.
+          </p>
+          <h3 id="section-3-5">3.5 Messaging Pattern: M:M Pub/Sub</h3>
+          <img class="lazy" data-src="images/diagrams/pubsub-3.png" />
+          <p>
+            Looking at this diagram, it is easy to see how things can get
+            complicated very quickly. There are peer-to-peer protocols that are
+            specifically designed to support this many-to-many Pub/Sub pattern.
+            However, a centralized hub is the most common way to manage
+            connections for realtime applications with many publishers and
+            subscribers.
+          </p>
+          <h3 id="section-3-6">3.6 Messaging Pattern: Pub/Sub Hub</h3>
+          <p>
+            With this pattern, each of the publishers and subscribers have a
+            single realtime connection to the central hub.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/pubsub-4.mp4" type="video/mp4" />
+          </video>
+          <p>
+            When a publisher sends a message it goes to the hub and then it is
+            emitted to all relevant subscribers.
+          </p>
+          <p>
+            There is one final pattern that we commonly find in the world of
+            Pub/Sub: bi-directional communication.
+          </p>
+          <h3 id="section-3-7">
+            3.7 Messaging Pattern: Bi-directional Pub/Sub
+          </h3>
+          <p>
+            So far we have only seen examples of clients being a publisher
+            <em>or</em> a subscriber, but within realtime web applications it is
+            very common for devices to be <em>both</em> publishers and
+            subscribers.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/pubsub-5.mp4" type="video/mp4" />
+          </video>
+          <p>
+            If we take the common use case of a chat application, a user is a
+            publisher whenever they send messages, and a subscriber when they
+            receive them. In the above example we show various devices
+            publishing messages. These messages go to the central hub and are
+            then emitted to all relevant subscribers.
+          </p>
+          <p>
+            Now, we’ll look at why Websockets is the protocol of choice for a
+            realtime applications that use a Pub/Sub hub.
+          </p>
+          <h3 id="section-3-8">3.8 WebSockets</h3>
+          <p>
+            There are a number of communication protocols that can be used to
+            build a real time application including HTTP derivatives, WebRTC,
+            WebTransport, and WebSockets. But for our use case, realtime
+            applications that have a hub which manages the realtime messages of
+            many publishers and subscribers, WebSockets is the logical, and most
+            common choice.
+          </p>
+          <img class="lazy" data-src="images/diagrams/protocols.png" />
+          <p>
+            The need for bi-directional communication rules out the HTTP
+            options; there are some (hacky) workarounds to get these to simulate
+            bi-directional communication, but it would not be considered a
+            typical implementation. WebRTC is a peer-to-peer protocol but isn’t
+            used for a central hub. WebTransport could work, but as of the time
+            of this writing, it is still an emerging technology that is not
+            typically used in production applications.
+          </p>
+          <p>
+            WebSockets, on the other hand, handle all of the above requirements.
+            This protocol is now supported in essentially
+            <a href="https://caniuse.com/websockets" target="_blank"
+              >every modern browser</a
+            >
+            and there are solid open-source libraries that exist to handle
+            common use cases like
+            <a href="https://socket.io" target="_blank">SocketIO</a>.
+          </p>
+          <p>
+            The Pub/Sub hub outlined above has the complicated task of managing
+            WebSocket connections and messages for many publishers and
+            subscribers. In the next section, we will explain why this Pub/Sub
+            hub should be treated as a separate service that is often provided
+            by a third party.
+          </p>
+
+          <!-- Section 4 -->
+          <h2 id="section-4">4. Dedicated Infrastructure for Realtime</h2>
+          <p>
+            At first glance, implementing realtime functionality for an
+            application is fairly simple. A library (like
+            <a href="https://socket.io" target="_blank">SocketIO</a>) can be
+            installed to manage Websocket connections and realtime messages.
+            This works well for a small application, with a small number of
+            publishers and subscribers. But eventually, coupling application
+            code with realtime management code (all on the same server) becomes
+            problematic.
+          </p>
+          <p>
+            As a realtime application becomes popular, the app server will need
+            to manage an increasing volume of realtime messages. Eventually, the
+            message load will become too great and (potentially) cause the app
+            server to crash.
+          </p>
+
+          <video autoplay loop muted playsinline style="width: 270px">
+            <source
+              src="images/diagrams/separate-realtime-1.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <p>
+            The initial response might be to vertically scale, adding more
+            compute power to the app server. This works, up to a point, but it
+            eventually becomes evident that these two components -- the app code
+            and the realtime management code -- have different scaling needs.
+            Therefore, they should be treated as two separate services -- with
+            different compute needs -- that exist on two different servers.
+          </p>
+
+          <video autoplay loop muted playsinline style="width: 570px">
+            <source
+              src="images/diagrams/separate-realtime-2.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <p>
+            Treating realtime as a separate service becomes increasingly
+            important when building multiple realtime applications. If realtime
+            management is not a separate service, both applications will contain
+            a redundant realtime management component. A separate realtime
+            service on the other hand, can manage the realtime messages for both
+            applications, without the need for redundant code.
+          </p>
+          <img class="lazy" data-src="images/diagrams/realtime-service.png" />
+          <p>
+            When realtime applications become more popular, the realtime
+            management component may need to scale at a different rate than the
+            rest of the application. A separate realtime service can scale
+            independently from the applications themselves, eliminating the need
+            to scale up an entire monolithic application.
+          </p>
+          <p>
+            At first, a realtime service can be scaled vertically, adding more
+            compute power to the existing server. But, at a certain point,
+            vertical scaling reaches a limit and becomes financially infeasible.
+            Now, the only option is to horizontally scale the realtime service.
+          </p>
+          <p>
+            A horizontally-scaled realtime service introduces new problems as a
+            result of WebSocket connections now being distributed across
+            multiple server instances. (We will explain more about these
+            challenges later.)
+          </p>
+          <p>
+            It’s at this point that developers often not only need a separate
+            realtime service, but a realtime infrastructure-as-a-service
+            provider. This way, developers can focus on building their realtime
+            applications rather than managing realtime infrastructure.
+          </p>
+          <p>
+            To summarise, having dedicated infrastructure for realtime offers:
+          </p>
+          <ul>
+            <li>
+              <strong>Flexibility</strong> (by decoupling the realtime needs
+              from that of the application, you can scale each part up and down
+              as needed)
+            </li>
+            <li>
+              <strong>Less Complexity</strong> (separating out the services
+              means that you have a better sense of what each part is doing;
+              developers can focus on their applications instead of
+              infrastructure)
+            </li>
+            <li>
+              <strong>Specialization Benefits</strong> (each part is able to do
+              what it does best, without interference from anything else, and
+              you can optimise for each particular service)
+            </li>
+          </ul>
+          <h3 id="section-4-1">4.1 Existing Solutions</h3>
+          <img class="lazy" data-src="images/diagrams/brands.png" />
+          <p>
+            Companies like
+            <a href="https://www.pubnub.com" target="_blank">PubNub</a>,
+            <a href="https://ably.com" target="_blank">Ably</a> and
+            <a href="https://pusher.com" target="_blank">Pusher</a>, three of
+            the major providers of realtime infrastructure-as-a-service, cater
+            to this need for a managed realtime infrastructure. They
+            <a href="https://www.pubnub.com/company/" target="_blank"
+              >advocate</a
+            >
+            decoupling realtime infrastructure from your application code “so
+            that product development teams can focus on innovation instead of
+            infrastructure.”
+          </p>
+          <blockquote>
+            “so that product development teams can focus on innovation instead
+            of infrastructure.” - PubNub
+          </blockquote>
+          <p>
+            These services host all required infrastructure needed for realtime
+            functionality, managing scaling and all the other concerns that take
+            developers away from focusing on their realtime apps. Developers
+            simply connect to their API endpoints and route all realtime data
+            through that service.
+          </p>
+          <p>
+            There are also self-deployable options for realtime infrastructure
+            which accordingly offer more control, albeit at the potential
+            expense of more configuration and deployment issues.
+          </p>
+
+          <!-- Section 5 -->
+          <h2 id="section-5">5. Realtime Middleware</h2>
+          <p>
+            There’s one last important component of realtime that has not been
+            mentioned. Realtime messages often require in-transit message
+            processing. When a message is published, it might need to undergo
+            some type of analysis or transformation before being received by
+            subscribed clients.
+          </p>
+          <h3 id="section-5-1">5.1 Realtime Middleware is Everywhere</h3>
+          <p>
+            The general pattern of performing some kind of computation on
+            realtime messages is widespread.
+          </p>
+          <p>Here are some examples of common realtime middleware uses:</p>
+          <ul>
+            <li>Filtering profanity out of chat messages</li>
+            <li>
+              Enriching latitude/longitude coordinates with the demographic
+              information of that area
+            </li>
+            <li>Translating a message in a chat app to a different language</li>
+            <li>Performing sentiment analysis on text with machine learning</li>
+            <li>Routing payment information to third parties such as Stripe</li>
+            <li>Responding to messages with chat bots</li>
+            <li>Sending alerts, given a particular trigger / condition</li>
+          </ul>
+          <img
+            class="lazy"
+            data-src="images/diagrams/realtime-categories.png"
+          />
+          <p>
+            Some real-world examples of this middleware being used for specific
+            services include:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=BCpReEEV9i8"
+                target="_blank"
+                >A large beverage company</a
+              >
+              that made a chat app for a big sporting event. They wanted to
+              filter any mention of their competitor out of the chat. So they
+              sent every message down to their servers which they had to spin up
+              and scale, strip out the name of their competitor, replace it with
+              their name, and republish the message back out.
+            </li>
+            <li>
+              <a href="https://ably.com/case-studies/guild" target="_blank"
+                >Guild</a
+              >, a professional messaging/chat app, uses realtime middleware to
+              handle event-based triggers for their users
+            </li>
+            <li>
+              <a href="https://ably.com/case-studies/onedio" target="_blank"
+                >Onedio</a
+              >, an HQ-trivia app for 1 million players, uses realtime
+              middleware to route messages to AWS’ SQS with extremely low
+              latency, something they likely wouldn’t have been able to support
+              without it.
+            </li>
+          </ul>
+          <p>
+            This need for realtime middleware was recognized by both of the
+            major realtime infrastructure-as-a-service providers, PubNub and
+            Ably. Both companies observed that their customers often needed to
+            perform a small bit of processing on their realtime messages.
+          </p>
+          <blockquote>
+            “A common requirement in realtime messaging applications is to be
+            able to insert some business logic into a message processing
+            pipeline.” -<a
+              href="https://ably.com/blog/why-we-dont-offer-functions"
+              target="_blank"
+              >Ably</a
+            >
+          </blockquote>
+          <h3 id="section-5-2">5.2 The Realtime Middleware Antipattern</h3>
+          <p>
+            PubNub and Ably recognized the need for realtime middleware when
+            they noticed
+            <a
+              href="https://www.youtube.com/watch?v=BCpReEEV9i8&ab_channel=PubNub"
+              target="_blank"
+              >an interesting anti-pattern</a
+            >
+            emerge with how their customers were using their services.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/recognized-need.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            Recall that PubNub and Ably’s services allow customers to decouple
+            their application infrastructure from their realtime infrastructure
+            as described above. However, they observed the users of their
+            services were sending every single message down to their own app
+            servers to perform some kind of processing or compute on those
+            messages. This reintroduced a lot of the same problems that existed
+            when things were tightly coupled. Now their customers found they had
+            to pay closer attention to the scaling needs of their service as it
+            became overburdened with this increased load.
+          </p>
+          <blockquote>
+            "You see everyone publishing down to their servers doing a small
+            little bit of processing and then publishing the message right back
+            out... It doesn't make sense to be funneling all of your data back
+            down to a small number of servers, scale those out as needed,
+            process and then republish back out... so, this [PubNub Functions]
+            is absolutely required." (PubNub CEO, Todd Greene)
+          </blockquote>
+          <h3 id="section-5-3">5.3 Existing Solutions</h3>
+          <p>
+            PubNub and Ably set out to solve this problem by offering realtime
+            middleware as part of their real time infrastructure-as-a-service.
+            To understand the solution that both companies landed on, it helps
+            to understand the requirements that this realtime middleware has.
+          </p>
+          <ol>
+            <li>It needs to be easy for developers to use and update</li>
+            <li>It needs to exist in a secure environment</li>
+            <li>
+              Each piece of middleware needs to be modular, reusable, and
+              independently scalable
+            </li>
+          </ol>
+          <p>
+            The reasons for these requirements can be easily understood with an
+            example.
+          </p>
+          <p>
+            Imagine that a developer is building multiple realtime apps that are
+            completely unrelated, for example a chat app that filters out
+            profanity from all its messages and a geolocation app that
+            transforms GPS coordinates to directions. Later, they find that they
+            have European users and want to translate messages from both apps to
+            several European languages. This developer also plans on building
+            more realtime apps in the future, with either completely new
+            features and/or possibly reusing previously-created middleware.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/middleware-reuse.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            It is helpful to think of these realtime middlewares as separate
+            services. In the above example, there is a profanity filter service,
+            a directions service, and various language translation services.
+            Each middleware only needs to perform some small amount of
+            processing, but needs to be able to scale up and down,
+            independently, on demand.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/middleware-scaling.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            There are four places that a realtime infrastructure-as-a-service
+            provider could put realtime middleware:
+          </p>
+          <ol>
+            <li>In the client-side code</li>
+            <li>In the server-side code</li>
+            <li>On a dedicated server for realtime middleware</li>
+            <li>In Serverless Functions</li>
+          </ol>
+          <img class="lazy" data-src="images/diagrams/middleware-where-1.png" />
+          The first option, putting realtime middleware in client-side code, is
+          a non-starter. Putting business logic in client-side code is not a
+          good practice because it introduces performance problems and security
+          concerns. In the
+          <a
+            href="https://softwareengineeringdaily.com/wp-content/uploads/2018/04/SED554-Pubsub-Infrastructure.pdf"
+            target="_blank"
+            >words</a
+          >
+          of PubNub founder Stephen Blum
+          <blockquote>
+            “You want that code to execute in a trusted environment, not on a
+            client mobile device, which is uninterested code execution, because
+            those things are hackable and crackable. You want it to store your
+            business logic in a place that it just can't be tampered with.”
+          </blockquote>
+          <img class="lazy" data-src="images/diagrams/middleware-where-2.png" />
+          <p>
+            The second option of putting realtime middleware on the realtime
+            server doesn’t work either. This is because it is not feasible to
+            perform these message transformations directly on realtime servers.
+            There are several reasons for this:
+          </p>
+          <ul>
+            <li>
+              <strong>Customization</strong>: Different customers have different
+              business needs for how their messages should be transformed and
+              interacted with. It is not practically possible for clients to
+              create custom code within these service providers’ server
+              codebase, and it is not possible for the service provider to
+              predict all customer needs and create the functions for them.
+            </li>
+            <li>
+              <strong>Security</strong>: Running customer code directly on the
+              realtime servers would present a significant risk. The service
+              provider would have to guard against both accidental disruptions
+              to the core code base as well as malicious attacks through this
+              access point into the realtime servers.
+            </li>
+            <li>
+              <strong>Separation of concerns</strong>: Running business logic
+              code on the realtime servers would tightly couple the message
+              delivery architecture to the business logic code. Both the
+              business logic execution and the message delivery performance
+              would be susceptible to decreased performance if it were sharing
+              resources with the other task. Additionally, these two tasks would
+              not necessarily scale in the same way or at the same time.
+            </li>
+          </ul>
+          <img class="lazy" data-src="images/diagrams/middleware-where-3.png" />
+          <p>
+            The third option, to put realtime middleware on a dedicated message
+            processing server wouldn’t be an ideal solution either. Although
+            this solution would decouple realtime management from realtime
+            message processing, all of the realtime middleware would be tightly
+            coupled on one server. Because each middleware should be treated as
+            its own modular service with different scaling needs, it doesn’t
+            make sense to put them all on the same server.
+          </p>
+          <img class="lazy" data-src="images/diagrams/middleware-where-4.png" />
+          <p>
+            The last option, serverless functions, is a perfect fit for realtime
+            middleware because it is secure, modular, and easy for developers to
+            customize.
+          </p>
+          <p>
+            Serverless functions are elastic compute hosted by a third party
+            that have several properties that make them ideal to use as realtime
+            middleware.
+          </p>
+          <ol>
+            <li>
+              They usually have small or compact use cases and as such are not
+              designed for persistence, but rather atomic ‘throwaway’
+              operations, albeit ones that can be readily reused.
+            </li>
+            <li>They spin up on demand and are independently scalable.</li>
+            <li>They are easy to package and deploy.</li>
+            <li>
+              The cost of running them is allocated per unit of time and as a
+              result they are potentially lower cost, since you only pay for
+              what you use.
+            </li>
+          </ol>
+          <img
+            class="lazy"
+            data-src="images/diagrams/serverless-functions.png"
+          />
+          <p>
+            These properties make them ideal for the purposes of realtime
+            middleware. With serverless functions, developers can easily create
+            and update realtime middleware without posing a security risk to the
+            realtime infrastructure. Each serverless function can be treated as
+            its own separate service that spins up and scales, independently, on
+            demand. Resultantly, they can be used by not just one, but multiple
+            applications for similar messages processing needs. And because
+            serverless functions scale up on demand and charge based on compute
+            time (or invocation frequency in the case of Cloudflare), developers
+            don’t have to worry about paying for idle compute resources.
+          </p>
+          <p>
+            It’s worth noting the limitations of serverless functions; they
+            aren’t a silver bullet. They aren’t ideal for processes requiring
+            large amounts of compute; there are maximums for length of compute
+            and size of payload. They also add some complexity to the
+            infrastructure and as a result can be harder to test and debug. They
+            live on servers with other people's code so there can be security
+            concerns. Since they are ephemeral, any initial execution can have a
+            slight lag -- the so-called ‘cold start’. Given these limitations,
+            though, the benefits of serverless functions outweigh the
+            disadvantages for this use case.
+          </p>
+          <p>
+            Although both companies used serverless functions to provide
+            realtime middleware for their customers, they did so in very
+            different ways.
+          </p>
+          <img class="lazy" data-src="images/diagrams/existing-solutions.png" />
+          <p>
+            PubNub created
+            <a href="https://www.pubnub.com/features/functions/" target="_blank"
+              >PubNub Functions</a
+            >
+            which are proprietary serverless functions, created and deployed
+            within PubNub. They
+            <a
+              href="https://www.youtube.com/watch?v=BCpReEEV9i8&ab_channel=PubNub"
+              target="_blank"
+              >characterized</a
+            >
+            it as “the idea of using an eventive model of programming so that
+            you are rewriting data as it goes through the network and then
+            publishing it out." Elsewhere, PubNub’s CEO
+            <a
+              href="https://softwareengineeringdaily.com/wp-content/uploads/2018/04/SED554-Pubsub-Infrastructure.pdf"
+              target="_blank"
+              >stated</a
+            >:
+          </p>
+          <blockquote>
+            “If there wasn't a concept called serverless, we would still want to
+            go down this path that we went down. Being able to give your
+            customer the control of how the network is involved and shaped is
+            very important, especially since you need somewhere to host your
+            trusted code. You want that code to execute in a trusted
+            environment...”
+          </blockquote>
+          <p>
+            Ably took a different approach: you create your own serverless
+            functions on one of the major serverless function providers’
+            infrastructure, and Ably lets you integrate these functions into
+            your Ably pipeline using
+            <a href="https://ably.com/integrations" target="_blank"
+              >Reactor Integrations</a
+            >.
+          </p>
+          <p>
+            We took the solutions proposed by Ably and PubNub as an opportunity
+            to explore the ‘realtime + middleware’ space. There were a number of
+            technical and practical problems that these third-party options had
+            solved, but we found a certain set of use cases where we had
+            something to offer.
+          </p>
+
+          <!-- Section 6 -->
+          <h2 id="section-6">6. Why We Built Ekko</h2>
+          <p>
+            Developers building realtime applications can choose between three
+            main options: a third-party service, an open-source solution, or
+            do-it-yourself. The right choice depends on the specific use case.
+          </p>
+          <img class="lazy" data-src="images/diagrams/current-options.png" />
+          <p>
+            If easy setup is most important, it’s probably best to go with a
+            third-party solution. There are good open-source solutions, but the
+            extent to which they are easy-to-use depends on each use case.
+          </p>
+          <p>
+            If complete control over data and infrastructure is important,
+            third-party solutions won't work. In this case, the only options are
+            open-source solutions or custom, self-built solutions.
+          </p>
+          <p>
+            If applications need realtime middleware, the choices become very
+            limited. Not all major third-party providers offer realtime
+            middleware out of the box, and there are currently no open-source
+            solutions that offer realtime middleware.
+          </p>
+          <p>
+            A custom built, in house realtime infrastructure is always an
+            option, and provides full control over infrastructure and data, but
+            this is a fairly ambitious undertaking.
+          </p>
+          <p>
+            We saw an opportunity to fill this gap in the market by building an
+            easy-to-use, open-source framework for self-deployed, realtime
+            infrastructure, with middleware. The result was Ekko: a realtime
+            framework for the in-transit processing of messages.
+          </p>
+
+          <!-- Section 7 -->
+          <h2 id="section-7">7. Using Ekko</h2>
+          <p>There are four main parts to Ekko:</p>
+          <ul>
+            <li>Ekko Server</li>
+            <li>Ekko Functions</li>
+            <li>Ekko CLI</li>
+            <li>Ekko Client</li>
+          </ul>
+          <img class="lazy" data-src="images/diagrams/parts.png" />
+          <p>
+            The Ekko Server manages realtime messages for applications with many
+            publishers and subscribers. It facilitates the processing of
+            realtime messages by invoking Ekko Functions.
+          </p>
+          <p>
+            Ekko Functions provide realtime middleware for in-transit message
+            processing. These functions are easy to create, update, and deploy
+            with the Ekko CLI tool. For complex workflows, developers can chain
+            multiple Ekko Functions together.
+          </p>
+          <p>
+            The Ekko CLI tool provides clear and simple commands that a
+            developer can use to manage Ekko Functions as well as spin up and
+            tear down the entire Ekko infrastructure.
+          </p>
+          <p>
+            Ekko Client enables developers to build realtime applications on top
+            of the Ekko Server. The Ekko Client exposes a handful of methods to
+            the developer, enabling clients to subscribe and unsubscribe to and
+            from channels, publish messages, and handle received messages.
+          </p>
+          <h3 id="section-7-1">7.1 Deploying Ekko</h3>
+          <p>
+            The Ekko Server infrastructure can easily be deployed to AWS by
+            running the <code>ekko init</code> command using the
+            <a
+              href="https://www.npmjs.com/package/ekko-realtime-cli"
+              target="_blank"
+              >Ekko CLI tool</a
+            >.
+          </p>
+          <img
+            class="lazy"
+            data-src="images/diagrams/cli-deploy-no-shadow.png"
+          />
+          <p>
+            The Ekko CLI prompts for AWS credentials and uses those, along with
+            AWS’ Cloud Development Kit (CDK), to deploy the Ekko infrastructure
+            to AWS.
+          </p>
+          <h3 id="section-7-2">7.2 Ekko Infrastructure</h3>
+          <img class="lazy" data-src="images/diagrams/infrastructure-1.png" />
+          <p>This is the infrastructure deployed by <code>ekko init</code>.</p>
+          <p>
+            The Ekko Server is a Node application deployed via container to AWS’
+            Elastic Container Service (ECS). The Application Load Balancer
+            distributes incoming WebSocket connections to the Ekko Server. We’ll
+            go into more detail on the importance of the S3 bucket and
+            ElastiCache instance in section 8.
+          </p>
+          <h3 id="section-7-3">7.3 Connecting an Application to Ekko Server</h3>
+          <p>
+            The Ekko Client is used to build realtime applications that make use
+            of the Ekko Server. Ekko Client can be
+            <a href="https://www.npmjs.com/package/ekko-realtime-client"
+              >installed with npm</a
+            >
+            or imported via CDN.
+          </p>
+          <p>
+            Once Ekko Client is installed, it can be used to create a new Ekko
+            Client instance.
+          </p>
+          <img class="lazy" data-src="images/diagrams/ekko-instance.png" />
+          <p>
+            This Ekko Client Instance allows an application to connect, and send
+            realtime messages to the Ekko Server. Ekko Client takes a handful of
+            parameters including an app name, a host, a
+            <a href="https://jwt.io" target="_blank">JSON Web Token</a> (JWT),
+            and an optional universally unique identifier (UUID). The app name
+            is the developers choice, and the host and JWT can be generated
+            using the Ekko CLI. The UUID is normally generated and passed in by
+            the developer. But, if a UUID is not passed to the Ekko Client
+            instance, Ekko Client will automatically generate one.
+          </p>
+          <p>
+            Retrieving the host and generating JWT values can be done by running
+            the <code>ekko jwt</code> command in the Ekko CLI.
+          </p>
+          <img class="lazy" data-src="images/diagrams/jwt.png" />
+          <p>
+            The Ekko Server endpoint is retrieved by the CLI from a local
+            environment variable that is generated when the Ekko infrastructure
+            is deployed. This is the URL for the Application Load Balancer that
+            proxies WebSocket connections to the Ekko Server. Passing this value
+            as the host to the Ekko Client, enables it to connect and send
+            realtime messages to the Ekko Server.
+          </p>
+          <p>
+            The CLI tool generates JWTs using a secret that is generated when
+            the Ekko infrastructure is first deployed. Passing in an admin
+            token, instead of a user token, gives access to status events,
+            including connect, disconnect and error messages.
+          </p>
+          <p>
+            Once an Ekko Client instance has been created, it exposes several
+            methods that you can use to interact with the Ekko Server. With
+            these methods, the client can subscribe and unsubscribe from
+            channels, publish messages, and handle messages of different types.
+          </p>
+          <p>
+            This is what it looks like when we have two clients connected to the
+            Ekko Server, subscribed to the same channel, publishing messages on
+            it.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/infrastructure-2.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <h3 id="section-7-4">7.4 Deploying Ekko Functions</h3>
+          <p>
+            To process realtime messages in transit, Ekko Functions need to be
+            deployed to AWS Lambda. When the Ekko infrastructure is deployed
+            with the <code>ekko init</code> command, it creates an
+            <code>ekko/ekko_functions</code> directory locally. From this
+            directory, <code>create</code>, <code>update</code>,
+            <code>deploy</code>, and <code>destroy</code> commands can be run to
+            manage Ekko Functions.
+          </p>
+          <p>
+            Ekko Functions are created with a default file structure and format
+            so that they can be deployed to AWS Lambda. These functions can be
+            as simple as the example below, or a complex program with multiple
+            files. In this example, the demo-angry function exists in an
+            <code>index.js</code> file and simply takes the message payload,
+            capitalizes the text, and adds a few exclamation points.
+          </p>
+          <img class="lazy" data-src="images/diagrams/angry.png" />
+          <p>
+            Once Ekko Functions are created, they can easily be deployed to AWS
+            Lambda with the <code>ekko deploy</code> command. After Ekko
+            Functions have been deployed, the
+            <code>associations.json</code> file in the
+            <code>ekko_functions</code> directory needs to be manually updated.
+          </p>
+          <img class="lazy" data-src="images/diagrams/associationsjson.png" />
+          <p>
+            <code>associations.json</code> informs the server what functions it
+            should use for processing messages published to a specific channel.
+            Once this file has been updated, the
+            <code>ekko update associations.json</code> command can be run which
+            stores the file on the S3 bucket mentioned earlier, and caches it on
+            the Ekko Server.
+          </p>
+          <h3 id="section-7-5">7.5 Transforming Messages in Realtime</h3>
+          <p>
+            After creating and deploying Ekko Functions, this is what the Ekko
+            infrastructure and message processing flow looks like:
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/infrastructure-3b.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            Now, when a client sends a message on the Angry channel, the server
+            forwards that message on to the Angry Lambda for processing. The
+            Angry Lambda sends the processed message back to the Ekko Server
+            which then emits the message out to all subscribed clients on the
+            Angry channel. The same occurs on the other two channels. The server
+            knows which functions are associated with which channels using
+            <code>associations.json</code>.
+          </p>
+          <!-- <img class="lazy" data-src="PLACEHOLDER WIDGET" /> -->
+          <p>
+            If you want to teardown your Ekko infrastructure, you can do that
+            with the <code>ekko teardown</code> command. This will tear down
+            your Ekko Infrastructure and all Ekko Functions deployed to AWS
+            Lambda.
+          </p>
+          <p>
+            As you can see, deploying your own realtime infrastructure and
+            managing realtime middleware is easy to do with Ekko. You have now
+            seen what Ekko is and how it works. In the next section, we show
+            three areas where we faced challenges while building Ekko.
+          </p>
+
+          <!-- Section 8 -->
+          <h2 id="section-8">8. Engineering Challenges</h2>
+          <p>
+            We faced several engineering challenges when building Ekko: how to
+            authenticate clients connecting to our server, how to associate
+            individual Ekko Functions with specific realtime channels, and how
+            to scale the infrastructure.
+          </p>
+          <h3 id="section-8-1">8.1 Authenticating Clients</h3>
+          <p>
+            Once we created an Ekko Server to manage realtime communication and
+            an Ekko Client API that developers could use to build realtime
+            applications, we faced the problem of authentication. With the
+            current design, Ekko Clients send messages to the developer's Ekko
+            Server endpoint. But the problem with this is that anyone can send
+            messages to this public endpoint, including bad actors.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/bad-actor-1.mp4" type="video/mp4" />
+          </video>
+          <p>
+            To validate Ekko Clients, we decided to use JSON Web Tokens (JWTs).
+            These are essentially API keys that can have a JSON object encoded
+            into it -- the data isn't private, but you can't change it without
+            breaking the API key. When the Ekko infrastructure is deployed, a
+            secret key is generated and stored as an environment variable on
+            Ekko Server and the CLI tool. When a developer runs the ekko jwt
+            command, the CLI tool uses the secret to generate app specific JWTs
+            that can be passed in to a new Ekko Client instance. The Ekko server
+            uses the same secret to authenticate JWTs and only allows clients
+            with a valid JWT to connect to it.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/bad-actor-2.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Since we can encode data into the JWT, we used it to specify if the
+            connecting client was an admin or a normal user, and what app they
+            were allowed to access. This gave us basic app- and role-level
+            security.
+          </p>
+          <h3 id="section-8-2">8.2 Ekko Function Management</h3>
+          <p>
+            Like PubNub and Ably, we decided to use serverless functions to run
+            our realtime middleware code. But, we still needed to figure out how
+            to coordinate message processing. How would Ekko Server know which
+            messages needed to be processed by which functions?
+          </p>
+          <h4 id="section-8-2-1">8.2.1 Linking Ekko Functions with Messages</h4>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/linking.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Since clients publish and subscribe to channels, it made sense to
+            link specific channels with specific Ekko functions. So if you’re
+            making a chat app that uses a profanity filter, you can create a
+            channel and all messages published to that channel get processed
+            with the profanity filter middleware. All subscribers to that
+            channel will receive the processed message.
+          </p>
+          <p>
+            We created an <code>associations.json</code> file to store these
+            associations between channels and functions.
+          </p>
+          <img class="lazy" data-src="images/diagrams/associationsjson.png" />
+          <p>
+            <code>associations.json</code> is organized by application. Each
+            application has an array of channels, and each of those channels
+            contain an array of Ekko Functions to be used for that channel. With
+            this file, the Ekko Server routes messages from a specific channel
+            to the Ekko Functions associated with that channel. Once processed,
+            messages are returned to the Ekko server and emitted to all
+            subscribed clients.
+          </p>
+          <p>
+            It’s worth noting that multiple functions can be chained together
+            and the Ekko Server will route messages to all of the functions, in
+            order, before emitting the processed message back out to
+            subscribers.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/chaining.mp4" type="video/mp4" />
+          </video>
+          <!-- <img class="lazy" data-src="PLACEHOLDER WIDGET" /> -->
+          <h4 id="section-8-2-2">8.2.2 Storing associations.json</h4>
+          <p>
+            The <code>associations.json</code> file is stored in an S3 bucket
+            and the developer is responsible for updating it locally and then
+            uploading it with the Ekko CLI tool.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/upload.mp4" type="video/mp4" />
+          </video>
+          <h4 id="section-8-2-3">8.2.3 Updating associations.json</h4>
+          <p>
+            We opted to cache the associations data on the server since we want
+            to minimize the amount of time it takes to process messages. But we
+            needed to figure out how to update the server nodes when a change
+            was made to the JSON file.
+          </p>
+          <p>
+            We looked at two ways for pushing the data to the Ekko Server. The
+            first option was to use the AWS service CloudWatch to send a message
+            through Simple Notification Service (SNS), another AWS service,
+            every time the S3 bucket registered an upload event.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/updating-associations-cloudwatch.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <p>
+            The second option was to update the Ekko Server directly at the same
+            time that we upload the new JSON file to the S3. This would involve
+            sending a <code>PUT</code> request to the Ekko Server with the JSON
+            object as the payload. We could just add this behind the scenes in
+            our CLI tool when the developer uses the
+            <code>ekko update</code> command. This was the option we chose since
+            it didn’t add any complexity to our infrastructure. The
+            <code>associations.json</code> file is sent as a JSON Web Token, and
+            the code for the <code>PUT</code> route on the server verifies it is
+            a valid token (in addition to decoding it and using that payload as
+            the new function-channel associations data.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source
+              src="images/diagrams/updating-associations-put.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <h3 id="section-8-3">8.3 Scaling Ekko</h3>
+          <p>
+            The final engineering challenge we needed to handle was around
+            scaling Ekko. We wanted the deployed infrastructure to be able to
+            scale up and down as needed. If there were more users connecting to
+            the realtime server, we needed to be able to support those
+            simultaneous connections, and if there was an increased volume of
+            messages passing through the server, we needed to be able to support
+            the speedy transmission of those messages as well as any
+            transformations or in-transit processing.
+          </p>
+          <h4 id="section-8-3-1">8.3.1 Deploying to AWS using CDK</h4>
+          <p>
+            Most of our scaling needs were handled by the choices we made when
+            deploying our infrastructure to AWS. We used AWS' Cloud Development
+            Toolkit (CDK) which synthesizes CloudFormation templates and then
+            deploys those constructs to AWS.
+          </p>
+          <img class="lazy" data-src="images/diagrams/cdk.png" />
+          <p>
+            We didn't want to have to deploy our scalable infrastructure
+            manually, using the AWS web interface. Options available to us
+            included something platform agnostic like
+            <a href="https://www.terraform.io" target="_blank">Terraform</a> or
+            the AWS homegrown equivalent,
+            <a
+              href="https://aws.amazon.com/cloudformation?tag=soumet-20"
+              target="_blank"
+              >CloudFormation</a
+            >
+            templates. CDK is a way to define those CloudFormation templates
+            using ordinary JavaScript code; it was appealing not to have to
+            handle the complexity of writing extremely long CloudFormation
+            templates from scratch and instead to define the infrastructure
+            'constructs' we wanted to provision.
+          </p>
+          <h4 id="section-8-3-2">8.3.2 Scaling the Ekko Server</h4>
+          <p>
+            The main part of Ekko that needed to be able to scale was the Ekko
+            server. We needed to support a flexible number of users connecting
+            to the realtime service as well as an increased volume of messages
+            being published.
+          </p>
+          <p>
+            In order to be able to scale flexibly, an attractive option for
+            horizontal scaling was to package up our server application as a
+            Docker container and then use AWS Fargate to scale those server
+            'tasks' up and down according to how taxed the particular task
+            instance became.
+          </p>
+          <img class="lazy" data-src="images/diagrams/scaling.png" />
+          <p>
+            Fargate scales according to rules defined to account for how much
+            CPU and memory each container instance is using. We can specify
+            minimum and maximum boundary values to constrain how many containers
+            AWS can run. Fargate is not always completely transparent to use,
+            but it does handle our core problem of wanting to horizontally scale
+            our Ekko Server.
+          </p>
+          <h4 id="section-8-3-3">8.3.3 Establishing WebSocket Connections</h4>
+          <p>
+            Our next challenge came from the way our load balancer was routing
+            incoming connections and how that disrupted our need for persistent
+            WebSocket connections.
+          </p>
+          <p>
+            Socket.IO makes one request to set a connection ID, and a subsequent
+            upgrade request to establish the long lived WebSocket connection.
+            These two requests must go to the same backend process, but by
+            default our load balancer — AWS' Application Load Balancer — may
+            send the two requests to different Fargate container instances, so
+            the connection may not be successful.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/ws-fail.mp4" type="video/mp4" />
+          </video>
+          <p>
+            When we first tried out Ekko on AWS infrastructure we could not
+            establish WebSocket connections for this reason.
+          </p>
+          <p>
+            The fix for this was to enable sticky sessions as a policy for our
+            Fargate task definition. We updated our CDK code to specify this
+            sticky property. Now each Ekko client gets routed to the same server
+            instance to which it was initially assigned and WebSocket
+            connections work as they should.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/ws-work.mp4" type="video/mp4" />
+          </video>
+          <h4 id="section-8-3-4">8.3.4 Scaling WebSocket Connections</h4>
+          <p>
+            Once our infrastructure was deployed, we wanted to make sure our
+            original server code continued to function as designed. Scaling to
+            multiple instances of the Ekko server presented an immediate
+            problem: how would all server instances know which messages were
+            being published on the various other instances?
+          </p>
+          <p>This animation illustrates the problem of scaling WebSockets:</p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/ws-problem.mp4" type="video/mp4" />
+          </video>
+          <p>
+            If we have two instances of the Ekko server, the load balancer is
+            going to connect one user to server instance A and the other to
+            server instance B. In this scenario, they are both subscribed to the
+            same channel so that they can chat with each other. Alice has a
+            WebSocket connection to server A and when she publishes her message,
+            server A receives it and publishes that message to the channel so
+            that all subscribers will receive it. However, only the WebSockets
+            connected with server A will get that message, so Bob won’t receive
+            it since he’s connected to server B.
+          </p>
+          <p>
+            In order to solve this problem, we used the Socket.IO Redis adapter
+            library. This library uses a Redis instance to broadcast events to
+            all of the Socket.IO server nodes.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/ws-solution.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Alice’s message, published to server node A, is automatically
+            published to server node B and emitted out to all subscribers.
+          </p>
+          <h4 id="section-8-3-5">8.3.5 Syncing Associations Data</h4>
+          <p>
+            A final engineering challenge we encountered was figuring out how to
+            synchronise state between all our Ekko Server instances.
+            Specifically, we needed to ensure that all server instances had the
+            latest version of the associations.json data (which pairs channels
+            with the Ekko Functions that will execute on all associated messages
+            passing through).
+          </p>
+          <p>
+            When updates are made to the <code>associations.json</code> file, we
+            use the CLI tool to upload these updates to the S3 bucket for
+            storage. We also let the Ekko Server know by sending a
+            <code>PUT</code> request with the new associations data as the
+            payload. In this way, the current server uses the data sent via the
+            <code>PUT</code> request, and new server instances spinning up will
+            use the latest version of the associations data in the S3 bucket.
+          </p>
+          <p>
+            However, we had a problem. The request will be routed to just one of
+            the Ekko Server instances. We need to be able to notify all of the
+            Ekko Server instances with the updated data. As you can see from the
+            animation, our <code>PUT</code> request does update one of our
+            server container instances, but this update isn't shared with the
+            others.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/put-fail.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Our solution to this was to use the standard Redis package. The
+            server that receives the message publishes the file to the Redis /
+            ElastiCache cluster, and all the other server instances in turn are
+            subscribed to the Redis cluster and receive a copy of the new
+            associations data. This allowed us to keep our server instances
+            synchronised.
+          </p>
+
+          <video autoplay loop muted playsinline>
+            <source src="images/diagrams/put-work.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Solving these various engineering challenges allowed us to build
+            Ekko out such that it was working as we hoped, and it was also able
+            to scale. At this point, we wanted to make sure that the service as
+            a whole could function under realistic use loads.
+          </p>
+
+          <!-- Section 9 -->
+          <h2 id="section-9">9. Load Testing Ekko</h2>
+          <p>
+            We wanted Ekko to be able to manage thousands of WebSocket
+            connections to be viable as a realtime message processing framework.
+            In addition, we wanted it to handle and route hundreds of thousands
+            of messages in a short amount of time, all while invoking Lambda
+            functions for in-transit message processing. To test all of this, we
+            used the
+            <a href="https://artillery.io/" target="_blank"
+              >Artillery.io load testing library</a
+            >.
+          </p>
+          <p>
+            We
+            <a
+              href="https://github.com/ekko-realtime/load-testing"
+              target="_blank"
+              >set out</a
+            >
+            to see how many WebSocket connections Ekko could handle. We ran into
+            a hard limit of 65,000 connections per Ekko Server container.
+            Attempting to establish more than 65,000 connections resulted in
+            WebSocket errors. We subsequently learned that other developers had
+            come across this unwritten AWS limit in
+            <a
+              href="https://medium.com/dazn-tech/introducing-pubby-our-custom-websockets-solution-c5764e3a7dcb"
+              target="_blank"
+              >their own projects</a
+            >. Although Ekko -- and the underlying infrastructure -- could
+            almost certainly be modified to remove this limit, we decided that
+            65,000 connections was enough for our use case.
+          </p>
+          <img class="lazy" data-src="images/diagrams/loadtest-1.png" />
+          <p>
+            Next, we wanted to test a common use case for a realtime message
+            processing service: many connected devices sending messages to a
+            realtime service for some kind of data processing or monitoring.
+            Note that in this scenario, there are many publishers generating
+            data for processing, but they are not subscribers. So, there is no
+            data being published back out to the connected devices from the
+            server.
+          </p>
+          <img class="lazy" data-src="images/diagrams/loadtest-4.png" />
+          <p>
+            In this test, we established 50,000 concurrent WebSocket
+            connections. Each connection published one message per minute for
+            ten minutes. Each of these messages were processed by an Ekko
+            Function deployed on AWS Lambda. The result was 50,000 concurrent
+            WebSocket connections sending a total of 500,000 messages to the
+            Ekko Server which transformed them -- a total of 500,000 Lambda
+            invocations over the course of ten minutes. During the test, AWS’
+            ECS spun up two additional Ekko Server containers to deal with this
+            load.
+          </p>
+          <p>
+            Finally, we wanted to test Ekko’s ability to handle the many
+            publisher, many subscriber use case that you would find with chat
+            apps. We started by testing 300 connections that all subscribed to
+            the same channel. Each connection sent 10 messages over the course
+            of a minute, for a total of 3,000 published messages.
+          </p>
+          <img class="lazy" data-src="images/diagrams/loadtest-2.png" />
+          <p>
+            Ekko Server was able to handle this without issues, only reaching
+            15% of its maximum CPU usage at peak. When we ran the same test with
+            900 connections, it maxed out the CPU before ECS and Fargate could
+            scale up. We realized that we were seeing a quadratic increase in
+            load with each additional subscriber. In the first test, Ekko Server
+            had to send 3000 messages to 300 subscribed clients, totaling
+            900,000 messages sent from the server. In the second test, it had to
+            send 9000 messages to 900 clients, totaling 8,100,000 messages.
+          </p>
+          <img class="lazy" data-src="images/diagrams/loadtest-3.png" />
+          <p>
+            Seeing how quickly load was increasing with additional connected
+            clients, we thought more about our use case. If you consider a chat
+            app like Slack, you realize that it is not common for users to be
+            continually sending messages. Instead, over the course of a day, a
+            user might send a few dozen messages. On average, a user might
+            receive a message a minute.
+          </p>
+          <p>
+            With this updated use case, we ran another test. We connected 10,000
+            clients that all subscribed to the same channel. We then connected
+            one client that published one message per second to all 10,000
+            clients. This resulted in Ekko Server sending 10,000 messages per
+            second for 100 seconds, totalling in 1,000,000 messages. This was
+            more than enough to justify the chat app use case and Ekko Server
+            only reached 50% CPU usage so we remained within reasonable ranges.
+          </p>
+          <img class="lazy" data-src="images/diagrams/loadtest-5.png" />
+          <p>
+            During our tests, ECS did scale up Ekko Server instances according
+            to the scaling policies defined by our CDK code. However, it became
+            apparent that different applications have different scaling needs. A
+            developer using Ekko will therefore most likely want to customize
+            their ECS scaling policies to suit their needs. For example, if you
+            anticipate consistently having over 100,000 connected clients, you
+            may want ECS to run a minimum of two or three Ekko Server containers
+            by default.
+          </p>
+
+          <!-- Section 10 -->
+          <h2 id="section-10">10. Future Work</h2>
+          <p>
+            Ekko is designed to solve the current use case we envisioned,
+            however we did notice some areas that we'd like to improve for
+            future iterations.
+          </p>
+          <h3 id="section-10-1">10.1 Message Persistence</h3>
+          <p>
+            Messages sent through Ekko are currently not stored anywhere. Ekko
+            simply acts as a hub and passes them on to whichever clients are
+            subscribed to the service. This was a design choice for our current
+            version: we chose to prioritise the message transmission speed and
+            the transformation functionality over any attempts to provide
+            durability or redundancy of the data passing through the Ekko
+            Server.
+          </p>
+          <p>
+            Simply storing every message somewhere on AWS infrastructure — S3
+            buckets or even DynamoDB — would be relatively easy to implement,
+            but using those within the context of the realtime service is a more
+            difficult problem. Which is to say, message persistence for the
+            purpose of simply logging message content is a much less problematic
+            planned feature than message persistence for the purpose of handling
+            dropped connections and the redelivery of messages missed while a
+            client was offline (for example). The exact scope of implementing
+            message persistence therefore depends quite a bit on what message
+            persistence is being used for.
+          </p>
+          <h3 id="section-10-2">10.2 Message Encryption</h3>
+          <p>
+            The Ekko Server currently has access to all messages sent through it
+            (providing they weren't already encrypted on the client side).
+            Encryption of user data is largely recognised as something that
+            should happen by default and not be offered as an afterthought.
+          </p>
+          <p>
+            For our use case, encryption of realtime data was not the core
+            problem we set out to solve, but in order to fill out the features
+            of Ekko we think that it is among the more important parts to
+            address. We would like to add TLS connection security by default,
+            the encryption of messages passing through the Ekko system as well
+            as more fine-grained access controls for users and developers.
+          </p>
+          <h3 id="section-10-3">10.3 In-order Delivery of Messages</h3>
+          <p>
+            Ekko currently prioritises the speedy — realtime — delivery of
+            messages rather than making sure those messages are delivered in
+            order. This is a tradeoff that most of the major realtime companies
+            concede, suggesting that users of their services add an incrementing
+            serial number to each incoming message so as to be able to ascertain
+            the order in which they were received.
+          </p>
+          <p>
+            For Ekko, messages can and will often be transformed in some way.
+            This means sending them off to an AWS Lambda function to be
+            transformed or acted upon, which can take a variable amount of time.
+            This is above all what might be responsible for causing messages to
+            be delivered out of order.
+          </p>
+          <p>
+            Developers using Ekko could implement their own variant of
+            incrementing message serial ids (as recommended by Pubnub and Ably),
+            but we would like to provide an option for in-order message
+            delivery, backed by whatever extra infrastructure is necessary.
+          </p>
+
+          <!-- Section 11 -->
+          <h2 id="section-11">11. Conclusion</h2>
+          <p>
+            Ekko is an open-source framework allowing developers to easily add
+            realtime infrastructure and in-transit message processing to web
+            applications.
+          </p>
+          <img class="lazy" data-src="images/diagrams/infrastructure.png" />
+          <p>
+            We hope you have seen how flexible Ekko is to work with. The
+            possibilities available to you are many, as you can see from some of
+            the following examples.
+          </p>
+          <img class="lazy" data-src="images/diagrams/options.png" />
+          <p>
+            The combination of a realtime server with serverless functions as a
+            kind of middleware for in-transit processing of messages offers a
+            rich palette of options from the very start. We look forward to
+            hearing what you build with Ekko!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="presentation" class="main-section">
+      <div class="bg-gray">
+        <h2>Presentation</h2>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/L-rbSRf2BrU?rel=0&controls=0&showinfo=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="our-team" class="main-section">
+      <div>
+        <div>
+          <div>
+            <h2>Meet our team</h2>
+            <p class="text-xl text-gray-300">
+              We are currently looking for opportunities. If you liked what you
+              saw and want to talk more, please reach out!
+            </p>
+          </div>
+          <ul class="people">
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/as.jpg"
+                alt=""
+              />
+              <div>
+                <div>
+                  <h3>Alex Strick van Linschoten</h3>
+                  <p>London, UK</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:alexstrick@fastmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/strickvl/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/strickvl" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.alexstrick.com/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/dm.jpg"
+                alt=""
+              />
+              <div>
+                <div>
+                  <h3>Dorey Miller</h3>
+                  <p>Seattle, WA, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:dorey.edinger@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/dorey-miller/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/doreymiller" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://doreymiller.github.io/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/dh.jpg"
+                alt=""
+              />
+              <div>
+                <div>
+                  <h3>Drew Holbrook</h3>
+                  <p>Crested Butte, CO, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:drewholbrook@gmail.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/drew-holbrook-54070517/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dpholbrook" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://dpholbrook.github.io/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="profile">
+              <img
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy"
+                data-src="images/team/wl.jpg"
+                alt=""
+              />
+              <div>
+                <div>
+                  <h3>Will Lotherington</h3>
+                  <p>Chicago, IL, USA</p>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="mailto:will.lotherington@hey.com" target="_blank"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/wlotherington/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/wLotherington" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://wlotherington.com/" target="_blank"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascripts/script.js"></script>
+  </body>
+</html>
